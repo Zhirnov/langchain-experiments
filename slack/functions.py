@@ -10,7 +10,7 @@ from langchain.prompts.chat import (
 load_dotenv(find_dotenv())
 
 
-def draft_email(user_input, name="Dave"):
+def draft_email(user_input, name="Ivan"):
     chat = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=1)
 
     template = """
@@ -41,3 +41,33 @@ def draft_email(user_input, name="Dave"):
     response = chain.run(user_input=user_input, signature=signature, name=name)
 
     return response
+
+def summarize_pdf(file):
+    """
+    Summarize a PDF file using the Hugging Face summarization pipeline.
+
+    Args:
+        file (str): The path to the PDF file to summarize.
+
+    Returns:
+        str: The summary of the PDF file.
+    """
+    # Import the pipeline
+    from transformers import pipeline
+
+    # Initialize the summarization pipeline
+    summarizer = pipeline("summarization")
+
+    # Read the PDF file
+    with open(file, "rb") as f:
+        pdf = f.read()
+
+    # Convert the PDF to text
+    text = pdf_to_text(pdf)
+
+    # Summarize the text
+    summary = summarizer(text, max_length=100, min_length=30, do_sample=False)
+
+    return summary[0]["summary_text"]
+
+    
