@@ -92,3 +92,9 @@ target/
 
 # Models
 .bin
+
+# Data
+.csv
+pandas_test/AMAZON_FASHION.json.gz
+pandas_test/meta_AMAZON_FASHION.json.gz
+pandas_test/orders.csv
