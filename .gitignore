@@ -22,6 +22,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+streamlit_chat/venv
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -98,3 +99,14 @@ target/
 pandas_test/AMAZON_FASHION.json.gz
 pandas_test/meta_AMAZON_FASHION.json.gz
 pandas_test/orders.csv
+streamlit_chat/venv/pyvenv.cfg
+streamlit_chat/venv/bin/activate
+streamlit_chat/venv/bin/activate.csh
+streamlit_chat/venv/bin/activate.fish
+streamlit_chat/venv/bin/Activate.ps1
+streamlit_chat/venv/bin/pip
+streamlit_chat/venv/bin/pip3
+streamlit_chat/venv/bin/pip3.8
+streamlit_chat/venv/bin/python
+streamlit_chat/venv/bin/python3
+streamlit_chat/venv/bin/python3.8
