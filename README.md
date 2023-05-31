@@ -16,9 +16,11 @@ The Python-specific portion of LangChain's documentation covers several main mod
 6. Agents: LLMs that make decisions about actions, observe the results, and repeat the process until completion, with a standard interface, agent selection, and end-to-end agent examples.
 
 ## Use Cases
+
 With LangChain, developers can create various applications, such as customer support chatbots, automated content generators, data analysis tools, and intelligent search engines. These applications can help businesses streamline their workflows, reduce manual labor, and improve customer experiences.
 
 ## Service
+
 By selling LangChain-based applications as a service to businesses, you can provide tailored solutions to meet their specific needs. For instance, companies can benefit from customizable chatbots that handle customer inquiries, personalized content creation tools for marketing, or internal data analysis systems that harness the power of LLMs to extract valuable insights. The possibilities are vast, and LangChain's flexible framework makes it the ideal choice for developing and deploying advanced language model applications in diverse industries.
 
 ## Requirements
@@ -29,6 +31,7 @@ By selling LangChain-based applications as a service to businesses, you can prov
 - [SerpAPI API Key](https://serpapi.com/)
 
 ## OpenAI API Models
+
 The OpenAI API is powered by a diverse set of [models](https://platform.openai.com/docs/models) with different capabilities and price points. You can also make limited customizations to our original base models for your specific use case with fine-tuning.
 
 ## Installation
@@ -50,6 +53,7 @@ source env/bin/activate
 ```
 
 Using `conda`:
+
 ``` bash
 cd langchain-experiments
 conda create -n langchain-env python=3.8
@@ -57,6 +61,7 @@ conda activate langchain-env
 ```
 
 #### 3. Install the required dependencies
+
 ``` bash
 pip install -r requirements.txt
 ```
@@ -70,6 +75,7 @@ OPENAI_API_KEY=your_api_key_here
 ```
 
 Save the file and close it. In your Python script or Jupyter notebook, load the `.env` file using the following code:
+
 ```python
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
@@ -78,17 +84,10 @@ load_dotenv(find_dotenv())
 By using the right naming convention for the environment variable, you don't have to manually store the key in a separate variable and pass it to the function. The library or package that requires the API key will automatically recognize the `OPENAI_API_KEY` environment variable and use its value.
 
 When needed, you can access the `OPENAI_API_KEY` as an environment variable:
+
 ```python
 import os
 api_key = os.environ['OPENAI_API_KEY']
 ```
 
 Now your Python environment is set up, and you can proceed with running the experiments.
-
-## Datalumina
-
-This document is provided to you by Datalumina. We help data analysts, engineers, and scientists launch and scale a successful freelance business — $100k+ /year, fun projects, happy clients. If you want to learn more about what we do, you can visit our [website](https://www.datalumina.io/) and subscribe to our [newsletter](https://www.datalumina.io/newsletter). Feel free to share this document with your data friends and colleagues.
-
-## Tutorials
-For video tutorials on how to use the LangChain library and run experiments, visit the YouTube channel: [youtube.com/@daveebbelaar](youtube.com/@daveebbelaar)
-
