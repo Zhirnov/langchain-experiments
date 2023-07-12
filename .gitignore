@@ -110,3 +110,5 @@ streamlit_chat/venv/bin/pip3.8
 streamlit_chat/venv/bin/python
 streamlit_chat/venv/bin/python3
 streamlit_chat/venv/bin/python3.8
+pandas_test/Data Science Salaries 2020-2022.csv
+pandas_test/ds_salaries.csv
